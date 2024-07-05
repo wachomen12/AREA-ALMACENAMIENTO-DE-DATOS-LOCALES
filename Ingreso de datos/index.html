@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Registro</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Sección del formulario de registro -->
+  <section class="form-register">
+    <h4><b>Ingreso de Datos de Cliente</b></h4>
+    <!-- Campo Nombre -->
+    <div class="input-container">
+      <p><b>Nombre:</b></p>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+    </div>
+    <!-- Campo Apellido -->
+    <div class="input-container">
+      <p><b>Apellido:</b></p>
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+    </div>
+    <!-- Campo Fecha de Nacimiento -->
+    <div class="input-container">
+      <p><b>Fecha de Nacimiento:</b></p>
+      <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+    </div>
+    <!-- Campo Correo Electrónico -->
+    <div class="input-container">
+      <p><b>Correo:</b></p>
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+    </div>
+    <!-- Campo Teléfono -->
+    <div class="input-container">
+      <p><b>Teléfono:</b></p>
+      <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su teléfono">
+    </div>
+    <!-- Campo Dirección -->
+    <div class="input-container">
+      <p><b>Dirección:</b></p>
+      <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección">
+    </div>
+    <!-- Checkbox de Términos y Condiciones -->
+    <div class="input-container">
+      <label class="terms">
+        <input class="controls2" type="checkbox" name="checkbox" id="termsCheckbox"> Estoy de acuerdo con <a href="#">Términos y Condiciones</a>
+      </label>
+    </div>
+    <!-- Botón de Envío -->
+    <input class="botons" type="submit" id="submitBtn" value="Ingresar">
+    
+    <!-- Mensajes de éxito y error -->
+    <p class="message success-message" id="successMessage">¡El formulario se ha enviado con éxito!</p>
+    <p class="message error-message" id="errorMessage">¡Por favor completa todos los campos correctamente!</p>
+  </section>
+
+  <script src="validaciones.js"></script>
+</body>
+</html> ponle cedula tambien al codigo

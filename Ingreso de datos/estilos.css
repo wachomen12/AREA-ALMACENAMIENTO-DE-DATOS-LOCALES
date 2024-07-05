@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-image: url('fondo.jpg');
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Form Styling */
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-register h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Styling */
+.input-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.controls,
+.controls2 {
+  width: 100%;
+  background: #2c3e50;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #1f53c5;
+  font-size: 18px;
+  color: rgba(221, 221, 221, 0.952);
+  outline: none;
+}
+
+.controls2 {
+  background: #34495e;
+}
+
+/* Paragraph Styling */
+.form-register p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Link Styling */
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-register .botons:hover {
+  background: #0d47a1;
+}
+
+/* Estilos para el mensaje de éxito y error */
+.message {
+  display: none;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Estilos para el mensaje de validación */
+.validation-message {
+  display: none;
+  position: absolute;
+  background-color: #fef1e1;
+  border: 1px solid #f0ad4e;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #8a6d3b;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+}
+
+.validation-message::before {
+  content: "⚠️";
+  margin-right: 5px;
+}
